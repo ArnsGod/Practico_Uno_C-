@@ -1,17 +1,17 @@
 /*
 Titulo:Menu para estudiantes
-Auntor:Jose Eduardo Flores Saravia
+Autor:Jose Eduardo Flores Saravia
 Descripcion: Segundo ejercicion del practico de pregramacion 1
 Fecha 2024-01-16
 */
 #include <iostream>
 #include <cctype>
-#include <cstdlib> // Para la función system en sistemas UNIX
-#include <unistd.h> // Para la función usleep en sistemas UNIX
+#include <cstdlib> // Para la funciÃ³n system en sistemas UNIX
+#include <unistd.h> // Para la funciÃ³n usleep en sistemas UNIX
 
 using namespace std;
 
-// Función para limpiar la pantalla dependiendo del sistema operativo
+// FunciÃ³n para limpiar la pantalla dependiendo del sistema operativo
 /*clear en sistemas UNIX y cls en sistemas Windows para limpiar la pantalla.*/
 void limpiarPantalla() {
 #ifdef _WIN32
@@ -21,9 +21,9 @@ void limpiarPantalla() {
 #endif
 }
 
-// Función para introducir una pausa dependiendo del sistema operativo
-/*La función esperarTecla espera a que el usuario presione Enter antes de continuar.
-Estas funciones son específicas de cada sistema operativo y se definen mediante preprocesadores condicionales (#ifdef y #else).*/
+// FunciÃ³n para introducir una pausa dependiendo del sistema operativo
+/*La funciÃ³n esperarTecla espera a que el usuario presione Enter antes de continuar.
+Estas funciones son especÃ­ficas de cada sistema operativo y se definen mediante preprocesadores condicionales (#ifdef y #else).*/
 void esperarTecla() {
 #ifdef _WIN32
 	system("pause");
@@ -39,7 +39,7 @@ int main() {
 	double res_num;
 	char opcion;
 	do {
-		limpiarPantalla(); // Limpiar la pantalla al mostrar el menú
+		limpiarPantalla(); // Limpiar la pantalla al mostrar el menÃº
 		
 		cout << "Menu principal" << endl;
 		cout << "1. Multiplicacion con dos valores" << endl;
@@ -68,7 +68,7 @@ int main() {
 				res_num = static_cast<double>(num_uno) / static_cast<double>(num_dos);
 				cout << "EL RESULTADO DE LA DIVISION ES DE: " << res_num << endl;
 			} else {
-				cout << "¡¡NO ES POSIBLE DIVIDIR ENTRE 0!!" << endl;
+				cout << "Â¡Â¡NO ES POSIBLE DIVIDIR ENTRE 0!!" << endl;
 			}
 			break;
 			
