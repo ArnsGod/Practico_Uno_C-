@@ -1,6 +1,6 @@
 /*
 Titulo:Definicion las siguientes asignaciones
-Auntor:Jose Eduardo Flores Saravia
+Autor:Jose Eduardo Flores Saravia
 Descripcion: Primer ejercicion del practico de pregramacion 1
 Fecha 2024-01-16
 */
